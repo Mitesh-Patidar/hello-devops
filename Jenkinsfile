@@ -1,12 +1,7 @@
 pipeline {
     agent any 
 
-    stages {
-        stage('Clone Repo') {
-            steps {
-                 git 'https://github.com/Mitesh-Patidar/hello-devops.git'
-            } 
-        } 
+    stages { 
 
         stage('Run Docker Image') {
             steps {
